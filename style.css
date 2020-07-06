@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Lunar Regular;
+    src: url(assets/Lunar-Regular.otf);
+}
+
+:root {
+    --background-color: #f3f3f3;
+    --text-color: #000000;
+}
+
+body {
+    font-family: Lunar Regular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 155px;
+}
+
+.slidecontainer {
+    width: 100%;
+    text-align: center;
+}
+
+p.inputlabel {
+    text-align: left;
+    margin-top: 16px;
+    margin-left: 5vw;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90vw;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 350px;
+    height: 100px;
+    background: var(--background-color);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 350px;
+    height: 40px;
+    background: var(--background-color);
+    cursor: pointer;
+}
+
+.totalprice {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.totalprice p {
+    border-top: 1px solid black;
+    padding-top: 8px;
+    /* text-align: left; */
+}
+
+#slidernumber {
+    width: 350px;
+    height: 250px;
+    position: fixed;
+    top: calc(50% - 150px + 8px);
+    left: 50vw;
+    transform: translate(-50%, 0);
+    font-size: 155px;
+    text-align: center;
+    pointer-events: none;
+}

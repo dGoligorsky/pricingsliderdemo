@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Works Price Calculator Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Works Price Calculator Demo" />
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+  </head>
+
+  <body>
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="1"
+        max="500"
+        value="250"
+        class="slider"
+        id="myRange"
+      />
+
+      <p class="inputlabel">
+        People in Office
+      </p>
+    </div>
+
+    <div id="slidernumber">
+      $123
+    </div>
+
+    <div class="totalprice">
+      <h1 id="tally">$123</h1>
+      <p>Price per month</p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
