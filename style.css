@@ -1,15 +1,10 @@
-@font-face {
-    font-family: Lunar Regular;
-    src: url(assets/Lunar-Regular.otf);
-}
-
 :root {
     --background-color: #f3f3f3;
     --text-color: #000000;
 }
 
 body {
-    font-family: Lunar Regular, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background-color: var(--background-color);
